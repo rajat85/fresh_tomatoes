@@ -1,0 +1,11 @@
+body {
+  padding-top: 70px;
+}
+
+.navigation-container {
+	margin-top: 16px;
+}
+
+.movie-details {
+	min-height: 300px;
+}

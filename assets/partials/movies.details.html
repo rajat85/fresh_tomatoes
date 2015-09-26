@@ -1,0 +1,29 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+     <strong class="media-heading">{{vm.movie.name}}</strong>
+  </div>
+  <div class="panel-body">
+    <div class="media movie-details">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" ng-src="{{vm.movie.image_url}}" height="120px">
+        </a>
+      </div>
+      <div class="media-body">
+        <p class="lead">
+          {{vm.movie.description}}
+        </p>
+        <p>
+          <rating ng-model="vm.movie.rating" max="5" readonly="true"></rating>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="navigation-container well">
+  <a class="btn btn-default btn-lg pull-left" ui-sref="movies.details({id: vm.prevMovie.id})" ng-if="vm.prevMovie"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
+  <a class="btn btn-default btn-lg pull-right" ui-sref="movies.details({id: vm.nextMovie.id})" ng-if="vm.nextMovie">Next <i class="glyphicon glyphicon-chevron-right"></i></a>  
+  <div class="clearfix"></div>
+</div>

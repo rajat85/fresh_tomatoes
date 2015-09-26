@@ -1,0 +1,35 @@
+<ui-view>
+	<div class="well">
+		<form class="form-inline">
+    		<div class="form-group">
+      			<input type="text" class="form-control" id="search" placeholder="Search Movies" ng-model="search.name">
+   			</div>
+		</form>
+	</div>
+
+
+	<div class="row">
+  	<div class="col-md-4 col-sm-6" ng-repeat="movie in vm.movies | filter:search">
+    	<div class="thumbnail">
+      	<img ng-src="{{movie.image_url}}" style="height:250px;">
+      	<div class="caption">
+        	<h3><a ui-sref="movies.details({id: movie.id})" ng-attr-title={{movie.name}}>{{movie.name | cut:false:23:'...'}}</a></h3>
+        	<p><rating ng-model="movie.rating" max="5" readonly="true"></rating></p>
+      	</div>
+    	</div>
+  	</div>
+	</div>
+
+	<!-- <table class="table table-bordered table-striped">
+		<thead>
+			<th>Name</th>
+			<th>Rating</th>
+		</thead>
+		<tbody>
+			<tr ng-repeat="movie in vm.movies | filter:search">
+				<td class="col-md-11"><a ui-sref="movies.details({id: movie.id})">{{movie.name}}</a></td>
+				<td class="col-md-1"><rating ng-model="movie.rating" max="5" readonly="true"></rating></td>
+			</tr>
+		</tbody>
+	</table> -->
+</ui-view>
