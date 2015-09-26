@@ -11,7 +11,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 	  	controllerAs: "vm"
 	  })
 	  .state('movies.details', {
-	  	url: "/movies/:id",
+	  	url: "/:id",
 	  	templateUrl: "partials/movies.details.html",
 	  	controller: "MovieDetailsController",
 	  	controllerAs: "vm"

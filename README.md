@@ -24,7 +24,7 @@ Steps:
 Now, you are good to access http://localhost:1337 from your browser.
 
 
-Also, I have developed a REST service which will allow me to do some CURD operations: like 
+Also, I have developed a REST service which will allow me to do some CRUD operations: like 
 1). http://localhost:3000/movies
 2). http://localhost:3000/:id
 
