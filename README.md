@@ -7,18 +7,20 @@ Steps:
 2. Install mysql server with mysql client.
 3. Create database called fresh_tomatoes.
 4. Clone this application from github
-6. Change user name and password for database connection as per your local mysql configuration. Typically the configuration for database connection is available under fresh_tomatoes/config/connections.js. Please refer the below code excerpt to change the connection parameters:
+5. Change user name and password for database connection as per your local mysql configuration. Typically the configuration for database connection is available under fresh_tomatoes/config/connections.js. Please refer the below code excerpt to change the connection parameters:
 
-	freshTomatoesDB: {
-    	adapter: 'sails-mysql',
-    	host: 'localhost',
-    	port: '3306',
-    	user: 'root',
-    	password: '',
-    	database: 'fresh_tomatoes'
-  	}
-7. run 'npm install'
-8. run 'sails lift'
+```
+freshTomatoesDB: {
+  	adapter: 'sails-mysql',
+  	host: 'localhost',
+  	port: '3306',
+  	user: 'root',
+  	password: '',
+  	database: 'fresh_tomatoes'
+	}
+```  
+6. run 'npm install'
+7. run 'sails lift'
 
 
 Now, you are good to access http://localhost:1337 from your browser.
