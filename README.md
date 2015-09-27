@@ -19,7 +19,6 @@ freshTomatoesDB: {
   	database: 'fresh_tomatoes'
 	}
 ```  
-
 6. cd to 'fresh_tomatoes'
 7. run 'npm install'
 8. run 'sails lift'
