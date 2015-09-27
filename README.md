@@ -20,8 +20,9 @@ freshTomatoesDB: {
 	}
 ```  
 
-6. run 'npm install'
-7. run 'sails lift'
+6. cd to 'fresh_tomatoes'
+7. run 'npm install'
+8. run 'sails lift'
 
 
 Now, you are good to access http://localhost:1337 from your browser.
@@ -34,7 +35,7 @@ Also, I have developed a REST service which will allow me to do some CRUD operat
 
 
 Note: I am consuming the data for this application from the REST service which I have implemented.
-	  Also, I made the REST URL public as its a prototype application.
+	  Also, I made the REST URLs public as its a prototype application.
 
 
 Please do let me know incase you face any difficulties to run this application.
